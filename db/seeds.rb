@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+# Seed videojuegos
 Videojuego.create(name: "GEARS OF WAR 3", descripcion: "Desarrollado por Epic Games en exclusiva para Xbox 360, Gears of War 3 sumerge a los jugadores en una desgarradora historia de esperanza, supervivencia y fraternidad.",genre: "terror",developer: "Epic Games", price: "60", cover: "https://cdn.discordapp.com/attachments/1009846868806729738/1063303877509775421/unnamed_1.png")
 
 Videojuego.create(name: "Assassin's creed: valhalla", descripcion: "Ponte en la piel de Eivor, una leyenda vikinga del pillaje.",genre: "accion", developer: "UBISOFT MONTREAL", price: "60", cover: "https://cdn.discordapp.com/attachments/1009846868806729738/1063303877509775421/unnamed_1.png")
@@ -24,3 +26,10 @@ Videojuego.create(name: "Dark Souls", descripcion: "Dark Souls nos pone en la pi
 Videojuego.create(name: "Batman Arkham City", descripcion: "Arkham City desarrolla la intensa y cautivadora atmosfera de Batman: Arkham Asylum.", genre: "accion", developer: "Rocksteady Studios", price: "60", cover: "https://cdn.discordapp.com/attachments/1009846868806729738/1063303877509775421/unnamed_1.png")
 
 Videojuego.create(name: "Resind Evil 3", descripcion: "Con este juego de Resident Evil vas a disfrutar de horas de diversión y de nuevos desafíos que te permitirón mejorar como gamer.", genre: "horror", developer: "Capcom", price: "60", cover: "https://cdn.discordapp.com/attachments/1009846868806729738/1063303877509775421/unnamed_1.png")
+
+# Seed reservas
+Reserva.create(id_videogame: 4)
+Reserva.create(id_videogame: 1)
+Reserva.create(id_videogame: 6)
+Reserva.create(id_videogame: 2)
+
