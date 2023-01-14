@@ -15,6 +15,13 @@ class VideojuegosController < ApplicationController
     render json: @videojuegos
   end
 
+  # GET /videojuegos/join/compras
+  def joinCompras
+    @videojuegos = Videojuego.joins(:compra)
+
+    render json: @videojuegos
+  end
+  
   # GET /videojuegos/1
   def show
     render json: @videojuego

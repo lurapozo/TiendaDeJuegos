@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  videojuego: one
+  sell_price: 1.5
+  card: 1
+
+two:
+  videojuego: two
+  sell_price: 1.5
+  card: 1
