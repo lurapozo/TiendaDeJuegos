@@ -28,8 +28,8 @@ Videojuego.create(name: "Batman Arkham City", descripcion: "Arkham City desarrol
 Videojuego.create(name: "Resind Evil 3", descripcion: "Con este juego de Resident Evil vas a disfrutar de horas de diversión y de nuevos desafíos que te permitirón mejorar como gamer.", genre: "horror", developer: "Capcom", price: "60", cover: "https://cdn.discordapp.com/attachments/1009846868806729738/1063303877509775421/unnamed_1.png")
 
 # Seed reservas
-Reserva.create(id_videogame: 4)
-Reserva.create(id_videogame: 1)
-Reserva.create(id_videogame: 6)
-Reserva.create(id_videogame: 2)
+Reserva.create(videojuego_id: 4)
+Reserva.create(videojuego_id: 1)
+Reserva.create(videojuego_id: 6)
+Reserva.create(videojuego_id: 2)
 

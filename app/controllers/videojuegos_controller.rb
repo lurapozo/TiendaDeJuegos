@@ -8,6 +8,13 @@ class VideojuegosController < ApplicationController
     render json: @videojuegos
   end
 
+  # GET /videojuegos/join/reservas
+  def joinReservas
+    @videojuegos = Videojuego.joins(:reserva)
+
+    render json: @videojuegos
+  end
+
   # GET /videojuegos/1
   def show
     render json: @videojuego

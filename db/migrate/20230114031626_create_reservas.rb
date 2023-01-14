@@ -1,7 +1,7 @@
 class CreateReservas < ActiveRecord::Migration[7.0]
   def change
     create_table :reservas do |t|
-      t.string :id_videogame
+      t.references :videojuego, null: false, foreign_key: true
 
       t.timestamps
     end

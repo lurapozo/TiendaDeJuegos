@@ -46,6 +46,6 @@ class ReservasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def reserva_params
-      params.require(:reserva).permit(:id_videogame)
+      params.require(:reserva).permit(:videojuego_id)
     end
 end

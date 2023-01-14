@@ -12,7 +12,7 @@ class ReservasControllerTest < ActionDispatch::IntegrationTest
 
   test "should create reserva" do
     assert_difference("Reserva.count") do
-      post reservas_url, params: { reserva: { id_videogame: @reserva.id_videogame } }, as: :json
+      post reservas_url, params: { reserva: { videojuego_id: @reserva.videojuego_id } }, as: :json
     end
 
     assert_response :created
@@ -24,7 +24,7 @@ class ReservasControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update reserva" do
-    patch reserva_url(@reserva), params: { reserva: { id_videogame: @reserva.id_videogame } }, as: :json
+    patch reserva_url(@reserva), params: { reserva: { videojuego_id: @reserva.videojuego_id } }, as: :json
     assert_response :success
   end
 
