@@ -34,15 +34,12 @@ Reserva.create(videojuego_id: 1)
 
 Reserva.create(videojuego_id: 6)
 
-Reserva.create(videojuego_id: 2)
 
 # Seed compras
-Compra.create(videojuego_id: 1, sell_price: 60, card:1)
-
-Compra.create(videojuego_id: 4, sell_price: 60, card:2)
-
-Compra.create(videojuego_id: 4, sell_price: 60, card:2)
-
 Compra.create(videojuego_id: 2, sell_price: 60, card:1)
 
-Compra.create(videojuego_id: 1, sell_price: 60, card:1)
+Compra.create(videojuego_id: 5, sell_price: 60, card:2)
+
+Compra.create(videojuego_id: 8, sell_price: 60, card:2)
+
+
