@@ -12,6 +12,12 @@ class ReservasController < ApplicationController
   def show
     render json: @reserva
   end
+  
+  #DELETE /reservas/join/videojuegos/:id
+  def joinVideojuegos
+    @reserva = Reserva.where(videojuego_id: params[:id])
+    @reserva.destroy(@reserva.ids)
+  end
 
   # POST /reservas
   def create
