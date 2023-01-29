@@ -44,6 +44,11 @@ class ReservasController < ApplicationController
     @reserva.destroy
   end
 
+  #DELETE /reservas/all
+  def destroyAll
+    Reserva.destroy_all
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_reserva

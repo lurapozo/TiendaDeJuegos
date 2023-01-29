@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   get '/videojuegos/join/reservas' , to: 'videojuegos#joinReservas'
   get '/videojuegos/join/compras' , to: 'videojuegos#joinCompras'
   delete '/reservas/join/videojuegos/:id' , to: 'reservas#joinVideojuegos'
+  post '/reservas/all' , to: 'reservas#destroyAll'
+
+  delete '/compras/join/videojuegos/:id' , to: 'compras#joinVideojuegos'
 
 
 end

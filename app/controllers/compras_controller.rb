@@ -33,6 +33,12 @@ class ComprasController < ApplicationController
     end
   end
 
+  #DELETE /compras/join/videojuegos/:id
+  def joinVideojuegos
+    @compra = Compra.where(videojuego_id: params[:id])
+    @compra.destroy(@compra.ids)
+  end
+
   # DELETE /compras/1
   def destroy
     @compra.destroy
