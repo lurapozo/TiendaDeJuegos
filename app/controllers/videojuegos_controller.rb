@@ -1,11 +1,23 @@
 class VideojuegosController < ApplicationController
   before_action :set_videojuego, only: %i[ show update destroy ]
-
   # GET /videojuegos
   def index
-    @videojuegos = Videojuego.all
+    
+    Rails.cache.fetch("") do
+      @videojuegos = Videojuego.all
+      render json: @videojuegos
 
-    render json: @videojuegos
+    end
+    # @videojuegos = Videojuego.all
+
+    # render json: @videojuegos
+
+    # Videojuego.uncached do
+
+    #   @videojuegos = Videojuego.all.to_a
+
+    #   render json: @videojuegos
+    # end
   end
 
   # GET /videojuegos/join/reservas
@@ -24,6 +36,8 @@ class VideojuegosController < ApplicationController
   
   # GET /videojuegos/1
   def show
+
+    @videojuego = Videojuego.find(params[:id])
     render json: @videojuego
   end
 
